@@ -2,6 +2,8 @@
 
 A modern, high-performance real-time messaging application built with React.js and Firebase. Features seamless user communication, private rooms with 4-digit codes, real-time notifications, and a beautiful, responsive UI.
 
+**Live Demo: [https://realtime-chatengine.web.app](https://realtime-chatengine.web.app)**
+
 ## Features
 
 ### Core Functionality
@@ -146,6 +148,32 @@ client/src/
 - **Real-time Updates**: All changes sync instantly across all clients
 - **Optimized Rendering**: Efficient message and room list updates
 - **Memory Management**: Proper cleanup of Firebase listeners
+
+### Environment Variables
+- Firebase config is in `client/src/firebase.js`
+- No additional .env files needed for basic setup
+
+## Deployment
+
+### Live Demo
+**Live Application: [https://realtime-chatengine.web.app](https://realtime-chatengine.web.app)**
+
+### Deploy to Firebase Hosting
+```bash
+# Install Firebase CLI
+npm install -g firebase-tools
+
+# Login to Firebase
+firebase login
+
+# Build the React app
+cd client
+npm run build
+cd ..
+
+# Deploy to Firebase
+firebase deploy
+```
 
 ### Environment Variables
 - Firebase config is in `client/src/firebase.js`
