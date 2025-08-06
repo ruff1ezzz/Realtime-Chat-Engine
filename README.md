@@ -2,7 +2,7 @@
 
 A modern, high-performance real-time messaging application built with React.js and Firebase. Features seamless user communication, private rooms with 4-digit codes, real-time notifications, and a beautiful, responsive UI.
 
-## 🚀 Features
+## Features
 
 ### Core Functionality
 - **Real-time Messaging**: Instant message delivery with Firebase Realtime Database
@@ -37,7 +37,7 @@ A modern, high-performance real-time messaging application built with React.js a
 - **React Hot Toast** - Toast notification system
 - **React Router** - Client-side routing
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Node.js (v16 or higher)
@@ -70,7 +70,7 @@ npm start
 ```
 Frontend will run on `http://localhost:3000`
 
-## 🎯 Usage Guide
+## Usage Guide
 
 ### Getting Started
 1. **Sign up**: Create account with username, email, and password
@@ -96,7 +96,7 @@ Frontend will run on `http://localhost:3000`
 - **Change Username**: Update your display name
 - **Account Info**: View your account details and creation date
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 client/src/
@@ -113,7 +113,7 @@ client/src/
 └── firebase.js         # Firebase configuration
 ```
 
-## 🔧 Key Components
+## Key Components
 
 ### useFirebase Hook
 - Manages all Firebase interactions
@@ -134,7 +134,7 @@ client/src/
 - **Message History**: Persistent storage with timestamps
 - **Unread Tracking**: Smart notification system
 
-## 🐛 Known Issues & Solutions
+## Known Issues & Solutions
 
 ### Common Issues
 1. **Room not appearing after creation**: Wait a moment for real-time sync, or refresh
@@ -147,21 +147,11 @@ client/src/
 - **Optimized Rendering**: Efficient message and room list updates
 - **Memory Management**: Proper cleanup of Firebase listeners
 
-## 🚀 Deployment
-
-### Firebase Hosting
-```bash
-npm install -g firebase-tools
-firebase login
-firebase init hosting
-firebase deploy
-```
-
 ### Environment Variables
 - Firebase config is in `client/src/firebase.js`
 - No additional .env files needed for basic setup
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -169,12 +159,6 @@ firebase deploy
 4. Test thoroughly
 5. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
 ---
 
-**Built with ❤️ using React.js and Firebase**
-
-*Last updated: August 2024* 
+**Built using React.js and Firebase**
