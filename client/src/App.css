@@ -1,0 +1,177 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ChatEngine Customization */
+.ce-chat-list {
+  background-color: #f8fafc !important;
+  border-right: 1px solid #e2e8f0 !important;
+}
+
+.ce-chat-list-column {
+  background-color: #f8fafc !important;
+}
+
+.ce-chat-card {
+  background-color: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  margin: 4px !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.ce-chat-card:hover {
+  background-color: #f1f5f9 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+}
+
+.ce-chat-card-active {
+  background-color: #3b82f6 !important;
+  color: white !important;
+}
+
+.ce-chat-form-container {
+  background-color: #ffffff !important;
+  border-top: 1px solid #e2e8f0 !important;
+}
+
+.ce-chat-feed {
+  background-color: #ffffff !important;
+}
+
+.ce-message-bubble {
+  background-color: #3b82f6 !important;
+  color: white !important;
+  border-radius: 12px !important;
+  padding: 8px 12px !important;
+  margin: 4px 0 !important;
+  max-width: 70% !important;
+}
+
+.ce-message-bubble-received {
+  background-color: #f1f5f9 !important;
+  color: #1f2937 !important;
+}
+
+.ce-message-input-form {
+  background-color: #ffffff !important;
+  border-top: 1px solid #e2e8f0 !important;
+  padding: 16px !important;
+}
+
+.ce-message-input {
+  background-color: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 20px !important;
+  padding: 12px 16px !important;
+  font-size: 14px !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.ce-message-input:focus {
+  outline: none !important;
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+.ce-send-button {
+  background-color: #3b82f6 !important;
+  color: white !important;
+  border-radius: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.ce-send-button:hover {
+  background-color: #2563eb !important;
+  transform: scale(1.05) !important;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.3s ease-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .ce-chat-list {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .ce-chat-feed {
+    width: 100% !important;
+  }
+  
+  .ce-message-bubble {
+    max-width: 85% !important;
+  }
+}
+
+/* Loading states */
+.loading-shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+} 
